@@ -1,6 +1,7 @@
 import './style.css'
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import * as THREE from 'three';
+import modelSrc from '/src/Animation.gltf?url';
 
 // SCENE SETUP
 const canvas = document.querySelector("canvas");
@@ -32,7 +33,7 @@ let scrollMixer:THREE.AnimationMixer;
 
 // ADD STUFF
 
-loader.load("/Animation.gltf",(gltf)=>{
+loader.load(modelSrc,(gltf)=>{
   scene.add(gltf.scene);
   
   scrollMixer  = new THREE.AnimationMixer(gltf.scene);
