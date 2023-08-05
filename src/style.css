@@ -4,6 +4,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+html
+{
+  scroll-behavior: smooth;
+}
 body
 {
   overflow-x: hidden;
@@ -30,4 +34,77 @@ h1
 {
   text-transform: capitalize;
   font-weight: 900;
+}
+h2
+{
+  font-weight: 300;
+  font-size: .75rem;
+}
+.card
+{
+  background: #ffffff25;
+  padding: 3rem;
+  border-radius: 1rem;
+  outline: 2px solid #ffffff3d;
+  backdrop-filter: blur(8px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #232323;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ffffff;
+  border-radius: 2rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+nav
+{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+nav div
+{
+  border-radius: 1rem;
+  background: #ffffff25;
+  border-radius: 1rem;
+  outline: 2px solid #ffffff3d;
+  backdrop-filter: blur(8px);
+  display: flex;
+  flex-wrap: wrap;
+  padding: .5rem;
+}
+nav div a
+{
+  padding: 1rem;
+  text-decoration: none;
+  color: white;
+  border-radius: .5rem;
+  transition: all 300ms ease-in-out;
+}
+nav div a:hover
+{
+  /* outline: 2px solid #ffffff3d; */
+  background: #ffffff25;
+  /* backdrop-filter: blur(8px); */
 }
